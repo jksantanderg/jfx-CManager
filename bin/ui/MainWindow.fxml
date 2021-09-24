@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vbMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="barMenu">
+        <menus>
+          <Menu mnemonicParsing="false" text="Manager">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showForm1" text="Add Contact" />
+                  <MenuItem mnemonicParsing="false" onAction="#showListContact" text="List Contact" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Data">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#importContact" text="Import Contact" />
+                  <MenuItem mnemonicParsing="false" onAction="#exportContact" text="Export contact" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadData" text="Load Data" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveData" text="Save Data" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="mainPane" prefHeight="311.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
